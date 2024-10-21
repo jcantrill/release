@@ -33,6 +33,9 @@ images:
       as:
       - golang:1.22.8
   to: loki-operator
+- dockerfile_literal: |
+    FROM src
+  to: loki-operator-src
 operator:
   bundles:
   - as: loki-operator-bundle
